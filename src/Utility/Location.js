@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = "AIzaSyAnAA0HBfHN8fzBCB-vmvT-oPHX16dkN4E";
+const GOOGLE_API_KEY = "AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik";
 
 export const getCoordsFromAddress = async (address) => {
   const urlAddress = encodeURI(address);
