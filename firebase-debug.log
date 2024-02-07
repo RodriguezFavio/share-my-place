@@ -1,0 +1,104 @@
+[debug] [2024-02-07T14:44:20.716Z] ----------------------------------------------------------------------
+[debug] [2024-02-07T14:44:20.720Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-02-07T14:44:20.721Z] CLI Version:   13.2.0
+[debug] [2024-02-07T14:44:20.721Z] Platform:      linux
+[debug] [2024-02-07T14:44:20.722Z] Node Version:  v20.11.0
+[debug] [2024-02-07T14:44:20.722Z] Time:          Wed Feb 07 2024 11:44:20 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-02-07T14:44:20.722Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-07T14:44:20.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-07T14:44:20.731Z] > authorizing via signed-in user (rodriguezfavio5@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mdla/workspace/node-js-udemy/share-my-place
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-02-07T14:48:24.978Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-02-07T14:48:24.978Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"js-static-hosting","name":"js-static-hosting"}
+[debug] [2024-02-07T14:48:26.280Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-02-07T14:48:26.281Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-02-07T14:48:26.436Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID js-static-hosting. Please try again with a unique project ID.
+[debug] [2024-02-07T14:51:42.038Z] ----------------------------------------------------------------------
+[debug] [2024-02-07T14:51:42.041Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-02-07T14:51:42.042Z] CLI Version:   13.2.0
+[debug] [2024-02-07T14:51:42.042Z] Platform:      linux
+[debug] [2024-02-07T14:51:42.042Z] Node Version:  v20.11.0
+[debug] [2024-02-07T14:51:42.042Z] Time:          Wed Feb 07 2024 11:51:42 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-02-07T14:51:42.042Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-07T14:51:42.050Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-07T14:51:42.051Z] > authorizing via signed-in user (rodriguezfavio5@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mdla/workspace/node-js-udemy/share-my-place
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-07T14:52:07.103Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-07T14:52:07.841Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-07T14:52:07.842Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project js-static-hosting-49ab7 (js-static-hosting) 
+[info] 
+=== Hosting Setup
+[debug] [2024-02-07T14:52:11.827Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/js-static-hosting-49ab7 [none]
+[debug] [2024-02-07T14:52:12.169Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/js-static-hosting-49ab7 200
+[debug] [2024-02-07T14:52:12.170Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/js-static-hosting-49ab7 {"projectId":"js-static-hosting-49ab7","projectNumber":"25359907721","displayName":"js-static-hosting","name":"projects/js-static-hosting-49ab7","resources":{"hostingSite":"js-static-hosting-49ab7"},"state":"ACTIVE","etag":"1_076e5813-fe5a-44ad-b18c-2023d739343e"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2024-02-07T14:53:18.364Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-02-07T14:53:18.603Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-02-07T14:53:18.604Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.0","browserURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/mdla/workspace/node-js-udemy/share-my-place 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=691748413&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-02-07T14:53:40.047Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-02-07T14:53:40.047Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-02-07T14:53:40.459Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-02-07T14:53:40.460Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-02-07T14:53:40.472Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-02-07T14:53:40.906Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-02-07T14:53:40.906Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"RodriguezFavio","id":157390418,"node_id":"U_kgDOCWGWUg","avatar_url":"https://avatars.githubusercontent.com/u/157390418?v=4","gravatar_id":"","url":"https://api.github.com/users/RodriguezFavio","html_url":"https://github.com/RodriguezFavio","followers_url":"https://api.github.com/users/RodriguezFavio/followers","following_url":"https://api.github.com/users/RodriguezFavio/following{/other_user}","gists_url":"https://api.github.com/users/RodriguezFavio/gists{/gist_id}","starred_url":"https://api.github.com/users/RodriguezFavio/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/RodriguezFavio/subscriptions","organizations_url":"https://api.github.com/users/RodriguezFavio/orgs","repos_url":"https://api.github.com/users/RodriguezFavio/repos","events_url":"https://api.github.com/users/RodriguezFavio/events{/privacy}","received_events_url":"https://api.github.com/users/RodriguezFavio/received_events","type":"User","site_admin":false,"name":"favio rodriguez","company":null,"blog":"","location":"Buenos Aires - Argentina","email":null,"hireable":null,"bio":"Passionate about technology and the digital world, with the ability to constantly learn, I currently have knowledge of JavaScript (with good practices) focused ","twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2024-01-22T14:58:47Z","updated_at":"2024-01-22T15:16:43Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":11,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as RodriguezFavio 
+[info] 
